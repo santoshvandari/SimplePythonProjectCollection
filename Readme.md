@@ -2,8 +2,8 @@
     This is the Simple Python Program that will convert the PDF text data into the audio(.mp3) version. 
 
 ## Usage
-    Follow the Given Steps to Setup in Your Local System. 
-    - Create the Virtual Environment (Not Necessary but Recommand) and activate it.
+Follow the Given Steps to Setup in Your Local System. 
+- Create the Virtual Environment (Not Necessary but Recommand) and activate it.
     ```bash
         # For Windows User
         python -m venv venv
@@ -14,10 +14,10 @@
         source venv/bin/activate
 
     ```
-    - Install the Requirements
+- Install the Requirements
     ```bash
         pip install -r requirements.txt
     ```
-    - Run the `main.py` file
+- Run the `main.py` file
 
 ## Enjoy Learning
