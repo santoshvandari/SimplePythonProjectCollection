@@ -7,6 +7,7 @@ if not pdf_name.endswith(".pdf"):
 if not os.path.exists(pdf_name):
     print("File does not exist")
     exit()
+    
 docx_name=input("Enter the name of the docx file: ")
 if not docx_name.endswith(".docx"):
     docx_name=docx_name+".docx"
