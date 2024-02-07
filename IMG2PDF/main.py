@@ -1,9 +1,8 @@
 import img2pdf
 import os
-import pathlib
 
 
-
+# Get the Images Path
 file_path=input("Enter the Name of the Images(Provide Space between if more than One Images): ")
 ImagesCollections = list(filter(None,(file_path.split(" "))))
 print(ImagesCollections)
@@ -19,10 +18,12 @@ for i in ImagesCollections:
 		print(f"File {i} not found")
 		exit(1)
 
+# Get the Output File Name
 output_file = input("Enter the Name of the Output File: ")
 if not output_file.endswith(".pdf"):
 	output_file = output_file + ".pdf"
 
+# Convert the Images to PDF
 try:
 	with open(output_file,"wb") as f:
 		print("Converting to PDF...")
