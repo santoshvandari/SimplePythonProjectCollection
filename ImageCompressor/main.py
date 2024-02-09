@@ -3,6 +3,17 @@ import os
 import sys 
 from PIL import Image 
 
+
+file_name=input("Enter a File Name(.jpg): ")
+if file_name.endswith('.jpg'):
+	file_name+='.jgp'
+if not os.path.exists(file_name):
+	print("File not found")
+	exit(1)
+output_name=input("Enter a output file name: ")
+if output_name.endswith('.jpg'):
+	output_name+='.jgp'
+
 # define a function for 
 # compressing an image 
 def compressMe(file, verbose = False): 
