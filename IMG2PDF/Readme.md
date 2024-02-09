@@ -1,4 +1,4 @@
-# PDF To Docx Conversion
+# Image To PDF Conversion
     This is the Simple Python Program that will convert the Collection of Images(.jpg) into the PDF(.pdf) File. You can modify the program to Convert the Other Images like .png,.jpeg,.svg.  
 
 ## Usage

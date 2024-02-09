@@ -1,4 +1,4 @@
-# PDF To Docx Conversion
+# Docx To PDF Conversion
     This is the Simple Python Program that will convert the Docx file into the PDF(.pdf) file. 
 
 ## Usage
