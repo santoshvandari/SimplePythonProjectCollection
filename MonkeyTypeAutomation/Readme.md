@@ -1,5 +1,5 @@
 # IMonkey Type Automation
-    This is the Simple Python Program that will help to compress your image according your need. It is desined to compress only .jpg image where you can modify the program to perform other kind of files(.JPEG,.PNG) also. 
+    This is the Simple Python Program that will automatically open the Chrome Browser and Start typing the Text automatically. The Average speed is 500+.
 
 ## Usage
 Follow the Given Steps to Setup in Your Local System. 
