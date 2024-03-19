@@ -30,8 +30,6 @@ def main():
             print("Invalid URL")
     else:
         exit(0)
-
-
 if __name__ == "__main__":
     while(True):
         main()
