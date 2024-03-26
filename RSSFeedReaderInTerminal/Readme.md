@@ -1,9 +1,9 @@
 # Docx To PDF Conversion
-    This is the Simple Python Program that will extract the `Title`, `Description` and `Body` of the given Website if Exists. 
+This is the Simple Python Program that will extract the `Title`, `Description` and `Body` of the given Website if Exists. 
 
 ## Usage
 Follow the Given Steps to Setup in Your Local System. 
-- Create the Virtual Environment (Not Necessary but Recommand) and activate it.
+- Create the Virtual Environment (Not Necessary but recommended) and activate it.
     ```bash
         # For Windows User
         python -m venv venv
