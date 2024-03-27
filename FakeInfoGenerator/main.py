@@ -3,6 +3,7 @@ from faker import Faker
 
 def main():
     fake = Faker()
+    # You can Generate Other Fake Information according to your need.
     name=fake.name()
     address=fake.address()
     dateofbirth=fake.date_of_birth()
