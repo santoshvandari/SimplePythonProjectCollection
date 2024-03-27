@@ -5,20 +5,17 @@ def main():
     fake = Faker()
     name=fake.name()
     address=fake.address()
+    dateofbirth=fake.date_of_birth()
     email=fake.email()
     phone=fake.phone_number()
     creditcard=fake.credit_card_full()
-    maritialstatus=fake.random_element(elements=('Single','Married','Divorced'))
-    dateofbirth=fake.date_of_birth()
 
-
-
-    print("Name: ",name)
-    print("Address: ",address)
-    print("Email: ",email)
-    print("Phone: ",phone)
-    print("Credit Card: ",creditcard)
-    print("Maritial Status: ",maritialstatus)
+    print("Name : ",name)
+    print("Address : ",address)
+    print("Date of Birth : ",dateofbirth)
+    print("Email : ",email)
+    print("Phone : ",phone)
+    print("Credit Card Details : ",creditcard)
 
 
 if __name__ =="__main__":
