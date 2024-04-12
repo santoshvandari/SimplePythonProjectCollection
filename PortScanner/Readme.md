@@ -1,5 +1,5 @@
-# YouTube Video Downloader
-This is the Simple Web Application written in Python Framework Flask Which will download the YouTube Video
+# Open Port Scanner
+This is the Simple Python program that will try to find the Open Port of any IP Address.
 
 ## Usage
 Follow the Given Steps to Setup in Your Local System. 
@@ -13,10 +13,6 @@ Follow the Given Steps to Setup in Your Local System.
     ```bash
     pip install -r requirements.txt
     ```
-- Run the `app.py` file
-- Open the URL In Browser
-    ```bash
-    http://127.0.0.1:5000/
-    ```
+- Run the `main.py` file
 
 ## Enjoy Learning
