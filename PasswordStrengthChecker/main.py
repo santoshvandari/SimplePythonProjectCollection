@@ -6,5 +6,7 @@ def crack_time(password):
 
 if __name__ == "__main__":
     password = input("Enter your password: ")
-    time_to_crack = crack_time(password)
-    print(f"Estimated time to crack password: {time_to_crack}")
+    if not password:
+        print("Password cannot be empty!")
+        exit(1)
+    print(f"Estimated time to crack password: {crack_time(password)}")
