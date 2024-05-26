@@ -1,4 +1,4 @@
-
+# Write a Python program that takes an IP address as input and performs a reverse DNS lookup to find the domain name associated with the IP address. The program should print the domain name if it is found, and an error message if the domain name is not found.
 
 import socket
 def reverse_dns_lookup(ip_address):
