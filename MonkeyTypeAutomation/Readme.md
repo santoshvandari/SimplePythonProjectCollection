@@ -1,4 +1,4 @@
-# IMonkey Type Automation
+# Monkey Type Automation
     This is the Simple Python Program that will automatically open the Chrome Browser and Start typing the Text automatically. The Average speed is 500+.
 
 ## Usage
