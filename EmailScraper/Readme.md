@@ -1,4 +1,4 @@
-# Open Port Scanner
+# Email Scraper
 This is the Simple Python program that will try to find all teh available email of any given web Address.
 
 ## Usage
