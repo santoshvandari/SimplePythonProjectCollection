@@ -9,7 +9,7 @@ df = pd.read_excel(file_path)
 # Get unique addresses
 address_set = set()
 for index, row in df.iterrows():
-    permanent_address = row["Address"]
+    permanent_address = row["Address"].strip().lower()
     if pd.notna(permanent_address):  # Skip NaN values
         address_set.add(permanent_address)
 
@@ -22,8 +22,14 @@ os.makedirs("filtered_data_pdf", exist_ok=True)
 
 # Process each address
 for address in address_list:
+    # Normalize the address in the DataFrame
+    df['Normalized_Address'] = df['Address'].str.strip().str.lower()
+    
     # Filter data for this specific address
-    address_df = df[df["Address"] == address]
+    address_df = df[df["Normalized_Address"] == address]
+    
+    # Drop the Normalized_Address column for PDF generation
+    address_df = address_df.drop(columns=['Normalized_Address'])
     
     # Create safe filename
     safe_filename = re.sub(r'[\\/*?:"<>|]', "_", str(address))
@@ -49,6 +55,15 @@ for address in address_list:
         
         data = [address_df.columns.tolist()] + address_df.values.tolist()
         t = Table(data)
+        t.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), (0.75, 0.75, 0.75)),
+            ('TEXTCOLOR', (0, 0), (-1, 0), (1, 1, 1)),
+            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+            ('BACKGROUND', (0, 1), (-1, -1), (0.95, 0.95, 0.95)),
+            ('GRID', (0, 0), (-1, -1), 1, (0.75, 0.75, 0.75)),
+        ]))
         elements.append(t)
         
         doc.build(elements)
